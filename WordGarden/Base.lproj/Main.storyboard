@@ -87,6 +87,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Guess a Letter"/>
+                                        <connections>
+                                            <action selector="guessLetterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ewy-QS-hCM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -107,6 +110,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2N7-JN-CY5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've Made Zero Guesses" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nk-6L-auF">
                                 <rect key="frame" x="16" y="257" width="288" height="20.5"/>
@@ -144,6 +150,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Nk-6L-auF" secondAttribute="trailing" constant="16" id="w5p-ap-jnE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flowerImageView" destination="f61-kA-sek" id="7My-xq-uNW"/>
+                        <outlet property="gameStatusMessageLabel" destination="2Nk-6L-auF" id="pQf-z8-ceW"/>
+                        <outlet property="guessLetterButton" destination="8vc-p3-KyK" id="zHZ-tX-Cxt"/>
+                        <outlet property="guessedLetterTextField" destination="v5k-MQ-vnm" id="dDp-yj-MGC"/>
+                        <outlet property="playAgainButton" destination="dkq-Ux-e0N" id="uab-ZI-j5P"/>
+                        <outlet property="wordsBeingRevealedLabel" destination="qtw-qe-4Ol" id="1Gi-Is-raa"/>
+                        <outlet property="wordsGuessedLabel" destination="ofQ-oY-KKe" id="Bi8-0b-fwk"/>
+                        <outlet property="wordsInGameLabel" destination="BCd-cx-qUy" id="Riw-xF-riT"/>
+                        <outlet property="wordsMissedLabel" destination="caY-vg-2q7" id="kb7-OX-OIQ"/>
+                        <outlet property="wordsRemainingLabel" destination="2UZ-pg-v9g" id="EdT-9C-t5K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
